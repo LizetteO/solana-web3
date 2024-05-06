@@ -57,8 +57,8 @@ export const accountTypeDefs = /* GraphQL */ `
         rentEpoch: Epoch
         addresses: [Address]
         authority: Account
-        deactivationSlot: Slot
-        lastExtendedSlot: Slot
+        deactivationSlot: Block
+        lastExtendedSlot: Block
         lastExtendedSlotStartIndex: Int
     }
 
@@ -148,12 +148,12 @@ export const accountTypeDefs = /* GraphQL */ `
         previousCredits: BigInt
     }
     type VoteAccountDataLastTimestamp {
-        slot: Slot
+        slot: Block
         timestamp: BigInt
     }
     type VoteAccountDataVote {
         confirmationCount: Int
-        slot: Slot
+        slot: Block
     }
     """
     A vote account
@@ -173,7 +173,7 @@ export const accountTypeDefs = /* GraphQL */ `
         lastTimestamp: VoteAccountDataLastTimestamp
         node: Account
         priorVoters: [Address]
-        rootSlot: Slot
+        rootSlot: Block
         votes: [VoteAccountDataVote]
     }
 
@@ -191,7 +191,7 @@ export const accountTypeDefs = /* GraphQL */ `
         epoch: Epoch
         epochStartTimestamp: BigInt
         leaderScheduleEpoch: Epoch
-        slot: Slot
+        slot: Block
         unixTimestamp: BigInt
     }
 
@@ -223,7 +223,7 @@ export const accountTypeDefs = /* GraphQL */ `
         space: BigInt
         rentEpoch: Epoch
         firstNormalEpoch: Epoch
-        firstNormalSlot: Slot
+        firstNormalSlot: Block
         leaderScheduleSlotOffset: BigInt
         slotsPerEpoch: BigInt
         warmup: Boolean
@@ -258,7 +258,7 @@ export const accountTypeDefs = /* GraphQL */ `
         ownerProgram: Account
         space: BigInt
         rentEpoch: Epoch
-        lastRestartSlot: Slot
+        lastRestartSlot: Block
     }
 
     type SysvarRecentBlockhashesEntry {
@@ -297,7 +297,7 @@ export const accountTypeDefs = /* GraphQL */ `
 
     type SlotHashEntry {
         hash: Hash
-        slot: Slot
+        slot: Block
     }
 
     """
@@ -326,7 +326,7 @@ export const accountTypeDefs = /* GraphQL */ `
         space: BigInt
         rentEpoch: Epoch
         bits: String
-        nextSlot: Slot
+        nextSlot: Block
     }
 
     type StakeHistoryEntry {

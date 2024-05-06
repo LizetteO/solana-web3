@@ -27,7 +27,7 @@ export const instructionTypeDefs = /* GraphQL */ `
         lookupTableAccount: Account
         lookupTableAuthority: Account
         payerAccount: Account
-        recentSlot: Slot
+        recentSlot: Block
         systemProgram: Account
     }
 
@@ -1255,12 +1255,12 @@ export const instructionTypeDefs = /* GraphQL */ `
 
     type VoteStateUpdateLockout {
         confirmationCount: BigInt # FIXME:*
-        slot: Slot
+        slot: Block
     }
     type VoteStateUpdate {
         hash: Hash
         lockouts: [VoteStateUpdateLockout]
-        root: Slot
+        root: Block
         timestamp: BigInt
     }
 
