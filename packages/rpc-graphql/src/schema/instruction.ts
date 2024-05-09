@@ -1093,6 +1093,22 @@ export const instructionTypeDefs = /* GraphQL */ `
         metadata: Account
         updateAuthority: Account
     }
+    """
+    SplToken-2022: Reallocate instruction
+    """
+    type SplTokenReallocate implements TransactionInstruction {
+        programId: Address
+        account: Account
+        extensionTypes: [String]
+        owner: Account
+        multisigOwner: Account
+        payer: Account
+        signers: [Address]
+        systemProgram: Account
+    }
+
+    # TODO: Extensions!
+    # ...
 
     type Lockup {
         custodian: Account
