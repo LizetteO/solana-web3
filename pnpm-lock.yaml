@@ -523,8 +523,8 @@ importers:
         specifier: ^10.0.6
         version: 10.0.6
       '@types/mz':
-        specifier: ^2.7.4
-        version: 2.7.4
+        specifier: ^2.7.8
+        version: 2.7.8
       '@types/node-fetch':
         specifier: '2'
         version: 2.1.0
@@ -3101,8 +3101,8 @@ packages:
   '@types/mocha@10.0.6':
     resolution: {integrity: sha512-dJvrYWxP/UcXm36Qn36fxhUKu8A/xMRXVT2cliFF1Z7UA9liG5Psj3ezNSZw+5puH2czDXRLcXQxf8JbJt0ejg==}
 
-  '@types/mz@2.7.4':
-    resolution: {integrity: sha512-Zs0imXxyWT20j3Z2NwKpr0IO2LmLactBblNyLua5Az4UHuqOQ02V3jPTgyKwDkuc33/ahw+C3O1PIZdrhFMuQA==}
+  '@types/mz@2.7.8':
+    resolution: {integrity: sha512-mGLNqqwt8yu4pDw9rEphAiyWnEdok0GzOGrwi5EiTuDFxw7H3ZaEI4ASFKq4HaZtemtjQ8MkcmtWcrU4V0WkIw==}
 
   '@types/node-fetch@2.1.0':
     resolution: {integrity: sha512-7qhZIMCvHDJMZtdirrb/SkmTs2Dg8oVCLpUCOxNKm36xBdUZhh2JDWO/BeOdI5UyStyaCmeRv5UskaiH7kAgdg==}
@@ -6767,6 +6767,7 @@ packages:
 
   sinon@17.0.2:
     resolution: {integrity: sha512-uihLiaB9FhzesElPDFZA7hDcNABzsVHwr3YfmM9sBllVwab3l0ltGlRV1XhpNfIacNDLGD1QRZNLs5nU5+hTuA==}
+    deprecated: There
 
   sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
@@ -9958,9 +9959,9 @@ snapshots:
 
   '@types/mocha@10.0.6': {}
 
-  '@types/mz@2.7.4':
+  '@types/mz@2.7.8':
     dependencies:
-      '@types/node': 20.11.20
+      '@types/node': 18.19.21
 
   '@types/node-fetch@2.1.0':
     dependencies:
